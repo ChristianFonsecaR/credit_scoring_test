@@ -19,9 +19,9 @@ def read_file_csv(filename):
     xgb_mod.fit(X_train, y_train)
     print('Modelo entrenado')
     # Guardamos el modelo entrenado para usarlo en produccion
-    package = '../models/best_model.pkl'
+    package = '../model/best_model.pkl'
     pickle.dump(xgb_mod, open(package, 'wb'))
-    print('Modelo exportado correctamente en la carpeta models')
+    print('Modelo exportado correctamente en la carpeta model')
 
 
 # Entrenamiento completo
