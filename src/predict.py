@@ -12,7 +12,7 @@ def score_model(filename, scores):
     df = pd.read_csv(os.path.join('../data/processed', filename)).set_index('ID')
     print(filename, ' cargado correctamente')
     # Leemos el modelo entrenado para usarlo
-    package = '../models/best_model.pkl'
+    package = '../model/best_model.pkl'
     model = pickle.load(open(package, 'rb'))
     print('Modelo importado correctamente')
     # Predecimos sobre el set de datos de Scoring    
